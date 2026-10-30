@@ -5,6 +5,8 @@ const DEBUG = cds.debug('mcp')
 require('./lib/api').registerCompileTargets()
 
 cds.on('bootstrap', (app) => {
+  require('./lib/oauth').registerOAuthBridge(app)
+
   const profiles = cds.env.profiles || []
   const isDev = profiles.includes('development') && !profiles.includes('production')
   if (!isDev) return
