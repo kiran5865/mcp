@@ -40,7 +40,7 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@cap-js/cds-test": "^1.0.1",
+    "@cap-js/cds-test": "^0.4.0",
     "oxfmt": ">=0.70.0"
   },
   "peerDependencies": {
